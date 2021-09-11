@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport", content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+	<title>inkoop</title>
+</head>
+<body>
+
+<div id="modal">
+      <div id="modal-content">
+        <ul>
+          <li><a href=""> About</a></li>
+          <li><a href=""> Services</a></li>
+          <li><a href=""> Cuisine</a></li>
+          <li><a href=""> Gallery</a></li>
+          <li><a href=""> Contact</a></li>
+          <li><a href=""> Book</a></li>
+        </ul>
+        <button class="btn1" id="close-btn">Close</button>
+      </div>
+    </div>
+    <nav>
+      <button id="modal-btn">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </button>
+
+      <div id="nav-head">
+        <h3>Lorem <span> Ipsum</span></h3>
+      </div>
+      <ul>
+        <li><a href=""> About</a></li>
+        <li><a href=""> Services</a></li>
+        <li><a href=""> Cuisine</a></li>
+        <li><a href=""> Gallery</a></li>
+        <li><a href=""> Contact</a></li>
+        <li><a href=""> Book</a></li>
+      </ul>
+
+      <button class="btn">Cart</button>
+      <button id="cart">
+        <img src="images/cart.png" alt="cart" srcset="" />
+      </button>
+    </nav>
+    <section id="content">
+      <header>
+        <h1>
+          What are you <br />
+          having for Lunch?
+        </h1>
+      </header>
+      <div id="tag">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incidium ut labore et.
+      </div>
+
+      <section id="card">
+        <ul>
+          <li>
+            <div class="box" id="box1">
+              <div class="boximg">
+                <img
+                  src="images/mexicantaco.jpg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <h4>Mexican Taco</h4>
+            </div>
+          </li>
+          <li>
+            <div class="box" id="box2">
+              <div class="boximg">
+                <img
+                  src="images/farmhousepizza.jpg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <h4>Farmhouse Pizza</h4>
+            </div>
+          </li>
+          <li>
+            <div class="box" id="box3">
+              <div class="boximg">
+                <img
+                  src="images/chickenburger.jpg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <h4>Chicken Burger</h4>
+            </div>
+          </li>
+          <li>
+            <div class="box" id="box4">
+              <div class="boximg">
+                <img
+                  src="images/loadednachos.jpg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <h4>Loaded Nachos</h4>
+            </div>
+          </li>
+          <li>
+            <div class="box" id="box5">
+              <div class="boximg">
+                <img
+                  src="images/hakkanoodles.jpg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <h4>Hakka Noodles</h4>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </section>
+    <script>
+      var modal = document.getElementById("modal");
+var close = document.getElementById("close-btn");
+var start = document.getElementById("modal-btn");
+
+start.addEventListener("click", () => {
+  modal.style.display = "block";
+  modal.style.opacity = "1";
+});
+close.addEventListener("click", () => {
+  modal.style.display = "none";
+});
+
+    </script>
+
+</body>
+</html>
